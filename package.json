@@ -1,0 +1,22 @@
+{
+  "name": "pure-render-function",
+  "version": "1.0.0",
+  "description": "A Pure Render Component producing function for React",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "babel src --out-dir lib",
+    "test": "ava",
+    "prepublish": "npm test && npm run clean && npm run build"
+  },
+  "files": ["lib"],
+  "author": "Justin Woo",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.2.0",
+    "babel": "^5.8.23",
+    "react": "^0.14.0-rc1",
+    "react-dom": "^0.14.0-rc1",
+    "rimraf": "^2.4.3"
+  }
+}
